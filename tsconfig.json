@@ -5,24 +5,22 @@
         "skipLibCheck": true,
         "strict": true,
         "noEmit": true,
-        "incremental": true,
-        "module": "esnext",
         "esModuleInterop": true,
-        "moduleResolution": "node",
+        "module": "esnext",
+        "moduleResolution": "bundler",
         "resolveJsonModule": true,
         "isolatedModules": true,
         "jsx": "preserve",
-        "forceConsistentCasingInFileNames": true,
-        "baseUrl": ".",
-        "paths": {
-            "@/*": ["./src/*"]
-        },
+        "incremental": true,
         "plugins": [
             {
                 "name": "next"
             }
-        ]
+        ],
+        "paths": {
+            "@/*": ["./*"]
+        }
     },
-    "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.ts"],
     "exclude": ["node_modules"]
 }

@@ -1,0 +1,21 @@
+{
+    "Header": {
+        "appTitle": "تقص نكست چى إس",
+        "navLinks": {
+            "week": "هذا الأسبوع",
+            "about": "نبذة عنا"
+        }
+    },
+    "WeatherAlerts": {
+        "title": "تنبيهات الطقس"
+    },
+    "Week": {
+        "title": "طقص الأسبوع",
+        "sunny": "مشمس",
+        "cloudy": "غائم",
+        "rainy": "ممطر",
+        "partlyCloudy": "غائم جزئيا",
+        "showers": "زخات مطرية",
+        "thunderstorms": "عواصف رعدية"
+    }
+}

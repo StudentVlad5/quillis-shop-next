@@ -1,8 +1,9 @@
-import Header from "@/app/_components/Header";
+import Header from "@/app/_components/Header/Header";
 import type { Metadata } from "next";
-import "./globals.css";
 import { type Locale, locales } from "@/i18n.config";
 import { unstable_setRequestLocale } from "next-intl/server";
+import {Providers} from './providers';
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Next.js Weather",
@@ -25,8 +26,10 @@ export default function LocaleLayout({
   return (
     <html lang={locale}>
       <body className="mx-auto w-[500px] bg-slate-950 px-6 pt-3 text-sky-100">
+      <Providers>
         <Header />
         {children}
+      </Providers>
       </body>
     </html>
   );

@@ -1,10 +1,10 @@
-import ServerWeatherAlerts  from "../_components/WeatherAlerts/ServerWeatherAlerts";
+
 import { unstable_setRequestLocale } from "next-intl/server";
  export default function Home({
    params: { locale },
  }: Readonly<{ params: { locale: string } }>) {
 
-+   unstable_setRequestLocale(locale);
+  unstable_setRequestLocale(locale);
   return (
     <main>
       <h1 className="text-xs font-thin">
@@ -19,7 +19,6 @@ import { unstable_setRequestLocale } from "next-intl/server";
           <p className="text-6xl font-thin">22°C</p>
         </div>
       </section>
-      <ServerWeatherAlerts  />
     </main>
   );
 }

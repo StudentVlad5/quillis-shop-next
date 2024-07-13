@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import theme from 'components/baseStyles/Variables.styled';
-import { ReactComponent as iconSearch } from 'images/svg/icon_searchLight__header.svg';
-import { ReactComponent as iconBookmark } from 'images/svg/bookmark.svg';
-import { ReactComponent as iconBasket } from 'images/svg/basket.svg';
+import theme from '@/app/_components/baseStyles/Variables.styled';
+// import { ReactComponent as iconSearch } from 'images/svg/icon_searchLight__header.svg';
+// import { ReactComponent as iconBookmark } from 'images/svg/bookmark.svg';
+// import { ReactComponent as iconBasket } from 'images/svg/basket.svg';
 
 const IconWrapper = styled.div`
   position: relative;
@@ -56,25 +56,25 @@ const View = styled.div`
   }
 `;
 
-const IconSearch = styled(iconSearch)`
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  transition: all 0.25s ease-in 0s;
-  &:hover,
-  &:focus {
-    transform: scale(1.15);
-    transition: all 0.25s ease-in 0s;
-  }
-`;
-const IconBookmark = styled(iconBookmark)`
-  width: 32px;
-  height: 32px;
-`;
-const IconBasket = styled(iconBasket)`
-  width: 32px;
-  height: 32px;
-`;
+// const IconSearch = styled(iconSearch)`
+//   width: 32px;
+//   height: 32px;
+//   cursor: pointer;
+//   transition: all 0.25s ease-in 0s;
+//   &:hover,
+//   &:focus {
+//     transform: scale(1.15);
+//     transition: all 0.25s ease-in 0s;
+//   }
+// `;
+// const IconBookmark = styled(iconBookmark)`
+//   width: 32px;
+//   height: 32px;
+// `;
+// const IconBasket = styled(iconBasket)`
+//   width: 32px;
+//   height: 32px;
+// `;
 
 const Container = styled.div`
   display: flex;
@@ -135,9 +135,9 @@ export {
   View,
   IconWrapper,
   Count,
-  IconSearch,
-  IconBookmark,
-  IconBasket,
+  // IconSearch,
+  // IconBookmark,
+  // IconBasket,
   MobileContainer,
   MobileNavBlock,
 };

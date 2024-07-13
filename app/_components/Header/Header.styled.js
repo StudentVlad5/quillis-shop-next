@@ -18,8 +18,8 @@ const HeaderSectionWrap = styled.header`
   transform: translate(-50%, 0%);
   z-index: 300;
   transition: background-color 0.3s ease-in-out;
-  ${({ isScrolled }) =>
-    isScrolled === "true" && `background-color: rgb(252, 249, 242);`};
+  ${({ $isScrolled }) =>
+    $isScrolled === "true" && `background-color: rgb(252, 249, 242);`};
 `;
 
 const HeaderSection = styled(Section)`

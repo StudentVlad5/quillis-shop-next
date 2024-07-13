@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { type Locale, locales } from "@/i18n.config";
 import { unstable_setRequestLocale } from "next-intl/server";
 import {Providers} from './providers';
+import {StatusProvider} from "@/app/_components/ContextStatus/ContextStatus";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -26,10 +27,12 @@ export default function LocaleLayout({
   return (
     <html lang={locale}>
       <body className="mx-auto w-[500px] bg-slate-950 px-6 pt-3 text-sky-100">
-      <Providers>
-        <Header />
-        {children}
-      </Providers>
+        <StatusProvider>
+            <Providers>
+              <Header />
+              {children}
+            </Providers>
+        </StatusProvider>
       </body>
     </html>
   );

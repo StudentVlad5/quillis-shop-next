@@ -28,7 +28,7 @@ export const HeaderClientComp = ({ children }) => {
   }, []);
 
   return (
-    <HeaderSectionWrap isScrolled={isScrolled}>
+    <HeaderSectionWrap $isScrolled={isScrolled}>
       {children}
       <HeaderUnderLine className={"true"} />
     </HeaderSectionWrap>

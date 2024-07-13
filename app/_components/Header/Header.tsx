@@ -1,15 +1,17 @@
-import { Link, type Locale } from "@/i18n.config";
- import { useLocale, useTranslations } from "next-intl";
- import LocaleSwitcher from "../LocaleSwitcher";
+// import { Link, type Locale } from "@/i18n.config";
+//  import { useLocale, useTranslations } from "next-intl";
+
  import { HeaderClientComp } from './HeaderClientComp';
+import { Navigation } from './Navigation/Navigation';
 
 
 export default function Header() {
-  const t = useTranslations("Header");
-  const locale = useLocale() as Locale;
+  // const t = useTranslations("Header");
+  // const locale = useLocale() as Locale;
   return (
     <HeaderClientComp>
-      <nav>
+      <Navigation/>
+      {/* <nav>
         <ul className="flex gap-4">
           <li>
             <Link
@@ -37,8 +39,8 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-      </nav>
-      <LocaleSwitcher locale={locale} />
+      </nav> */}
+      {/* <LocaleSwitcher locale={locale} /> */}
     </HeaderClientComp>
   );
 }
